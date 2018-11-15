@@ -30,6 +30,10 @@ dependencies {
     testCompile 'io.cucumber:cucumber-junit:2.4.0'
 
 
+    compile 'org.mongodb:mongodb-driver:3.3.0'
+    // https://mvnrepository.com/artifact/org.jongo/jongo
+    compile group: 'org.jongo', name: 'jongo', version: '1.4.0'
+
     testCompile group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '4.12.2'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.0.2'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.0.2'

@@ -1,8 +1,8 @@
 package daos;
 
+import com.mongodb.MongoClient;
 import org.jongo.Jongo;
 
-import com.mongodb.MongoClient;
 
 /**
  * As per documentation:

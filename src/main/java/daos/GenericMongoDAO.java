@@ -19,6 +19,10 @@ public class GenericMongoDAO<T> {
         this.mongoCollection = this.getCollectionFor(entityType);
     }
 
+    public GenericMongoDAO() {
+
+    }
+
     private MongoCollection getCollectionFor(Class<T> entityType) {
         Jongo jongo = MongoConnection.getInstance().getJongo();
         return jongo.getCollection(entityType.getSimpleName());
@@ -57,10 +61,12 @@ public class GenericMongoDAO<T> {
     /**
      * Copia el contenido de un iterable en una lista
      */
-    protected <X> List<X> copyToList(Iterable<X> iterable) {
+    protected <X> List<X> copyToList(	Iterable<X> iterable) {
         List<X> result = new ArrayList<>();
         iterable.forEach(x -> result.add(x));
         return result;
     }
-
 }
+
+
+
